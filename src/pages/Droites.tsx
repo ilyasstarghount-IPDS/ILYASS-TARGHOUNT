@@ -4,7 +4,6 @@ import {
   ArrowLeft,
   ExternalLink,
   FileText,
-  BookOpen,
   ClipboardCheck,
   Circle,
   Triangle,
