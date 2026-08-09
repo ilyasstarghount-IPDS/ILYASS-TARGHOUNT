@@ -1,0 +1,29 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,Arial,sans-serif;
+  color:white;
+  background:
+  radial-gradient(circle at top right,#0ea5e933 0%,transparent 30%),
+  radial-gradient(circle at bottom left,#2563eb33 0%,transparent 35%),
+  #08111f;
+
+  overflow-x:hidden;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+button{
+  font-family:inherit;
+}

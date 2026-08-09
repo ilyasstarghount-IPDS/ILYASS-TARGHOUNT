@@ -1,0 +1,77 @@
+.whyme{
+    padding:120px 8%;
+    background:#08111f;
+    color:white;
+}
+
+.whyme-container{
+    max-width:1400px;
+    margin:auto;
+}
+
+.whyme .section-badge{
+    display:block;
+    width:max-content;
+    margin:0 auto;
+}
+
+.whyme h2{
+    text-align:center;
+    font-size:48px;
+    margin:20px 0 70px;
+}
+
+.whyme h2 span{
+    color:#38bdf8;
+}
+
+.whyme-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+.why-card{
+    background:rgba(255,255,255,.04);
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:22px;
+    padding:35px;
+    text-align:center;
+    transition:.35s;
+}
+
+.why-card:hover{
+    transform:translateY(-10px);
+    border-color:#38bdf8;
+    box-shadow:0 20px 45px rgba(56,189,248,.18);
+}
+
+.why-icon{
+    width:80px;
+    height:80px;
+    margin:0 auto 25px;
+    border-radius:50%;
+    background:#38bdf8;
+    color:#08111f;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.why-card h3{
+    font-size:24px;
+    margin-bottom:15px;
+}
+
+.why-card p{
+    color:#94a3b8;
+    line-height:1.8;
+}
+
+@media(max-width:768px){
+
+.whyme h2{
+    font-size:36px;
+}
+
+}

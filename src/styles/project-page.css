@@ -1,0 +1,727 @@
+/* =========================
+   PROJECT PAGE
+========================= */
+
+.project-page {
+  min-height: 100vh;
+  background: #08111f;
+  color: white;
+}
+
+/* =========================
+   CONTAINER
+========================= */
+
+.project-page-container {
+  width: min(1200px, 90%);
+  margin: auto;
+}
+
+/* =========================
+   HERO
+========================= */
+
+.project-page-hero {
+  padding: 140px 0 80px;
+}
+
+/* =========================
+   BACK TO PROJECTS BUTTON
+========================= */
+
+.back-projects {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  padding: 10px 16px;
+  margin-bottom: 45px;
+
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  color: #94a3b8;
+
+  font-family: inherit;
+  font-size: 14px;
+  font-weight: 500;
+
+  cursor: pointer;
+
+  appearance: none;
+  -webkit-appearance: none;
+
+  transition:
+    transform 0.3s ease,
+    background 0.3s ease,
+    border-color 0.3s ease,
+    color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Arrow */
+
+.back-projects svg {
+  transition: transform 0.3s ease;
+}
+
+/* Hover */
+
+.back-projects:hover {
+  color: #38bdf8;
+
+  background: rgba(56, 189, 248, 0.08);
+
+  border-color: rgba(56, 189, 248, 0.45);
+
+  transform: translateX(-4px);
+
+  box-shadow:
+    0 8px 25px rgba(56, 189, 248, 0.12);
+}
+
+/* Arrow animation */
+
+.back-projects:hover svg {
+  transform: translateX(-4px);
+}
+
+/* Active */
+
+.back-projects:active {
+  transform: translateX(-4px) scale(0.97);
+}
+
+/* =========================
+   HERO GRID
+========================= */
+
+.project-page-grid {
+  display: grid;
+
+  grid-template-columns: 1fr 1fr;
+
+  gap: 60px;
+
+  align-items: center;
+}
+
+/* =========================
+   IMAGE
+========================= */
+
+.project-page-image {
+  overflow: hidden;
+
+  border-radius: 25px;
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.35);
+}
+
+.project-page-image img {
+  width: 100%;
+
+  display: block;
+
+  transition: 0.5s;
+}
+
+.project-page-image:hover img {
+  transform: scale(1.04);
+}
+
+/* =========================
+   INTRO
+========================= */
+
+.project-page-intro h1 {
+  font-size: clamp(38px, 5vw, 64px);
+
+  line-height: 1.1;
+
+  margin: 20px 0;
+}
+
+.project-page-intro h1 span {
+  color: #38bdf8;
+}
+
+.project-page-intro p {
+  color: #94a3b8;
+
+  line-height: 1.8;
+
+  font-size: 16px;
+}
+
+/* =========================
+   BADGE
+========================= */
+
+.section-badge {
+  display: inline-block;
+
+  padding: 7px 14px;
+
+  border-radius: 20px;
+
+  background: rgba(56, 189, 248, 0.1);
+
+  border: 1px solid rgba(56, 189, 248, 0.2);
+
+  color: #38bdf8;
+
+  font-size: 13px;
+
+  font-weight: 600;
+}
+
+/* =========================
+   TAGS
+========================= */
+
+.project-page-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 10px;
+
+  margin: 25px 0;
+}
+
+.project-page-tags span {
+  padding: 8px 13px;
+
+  border-radius: 20px;
+
+  background: rgba(255, 255, 255, 0.05);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+
+  font-size: 13px;
+}
+
+/* =========================
+   MODULE BUTTON
+========================= */
+
+.module-button {
+  display: inline-flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 9px;
+
+  padding: 14px 22px;
+
+  border-radius: 12px;
+
+  background: #38bdf8;
+
+  color: #08111f;
+
+  text-decoration: none;
+
+  font-weight: 700;
+
+  border: none;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.module-button:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 15px 35px rgba(56, 189, 248, 0.3);
+}
+
+/* =========================
+   SECTIONS
+========================= */
+
+.project-page-section {
+  padding: 80px 0;
+}
+
+.project-page-section h2 {
+  font-size: 40px;
+
+  margin: 20px 0 40px;
+}
+
+.project-page-section h2 span {
+  color: #38bdf8;
+}
+
+/* =========================
+   DESCRIPTION
+========================= */
+
+.project-description-card {
+  padding: 30px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 20px;
+}
+
+.project-description-card h3 {
+  margin-top: 0;
+
+  font-size: 22px;
+}
+
+.project-description-card p {
+  color: #94a3b8;
+
+  line-height: 1.8;
+}
+
+/* =========================
+   PROJECT INFO
+========================= */
+
+.project-info-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 25px;
+}
+
+.project-info-grid div {
+  padding: 20px;
+
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.03);
+
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.project-info-grid strong {
+  color: #38bdf8;
+
+  display: block;
+
+  margin-bottom: 8px;
+}
+
+.project-info-grid p {
+  margin: 0;
+
+  color: #cbd5e1;
+}
+
+/* =========================
+   OBJECTIVES
+========================= */
+
+.objectives-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.objective-card {
+  display: flex;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+.objective-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.objective-number {
+  color: #38bdf8;
+
+  font-weight: 700;
+
+  font-size: 18px;
+}
+
+.objective-card p {
+  color: #cbd5e1;
+
+  margin: 0;
+
+  line-height: 1.6;
+}
+
+/* =========================
+   DOCUMENTS
+========================= */
+
+.documents-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.document-card {
+  display: flex;
+
+  align-items: center;
+
+  gap: 20px;
+
+  padding: 25px;
+
+  color: white;
+
+  text-decoration: none;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+.document-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #38bdf8;
+
+  box-shadow:
+    0 15px 35px rgba(56, 189, 248, 0.12);
+}
+
+.document-icon {
+  width: 55px;
+
+  height: 55px;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  border-radius: 14px;
+
+  background: rgba(56, 189, 248, 0.1);
+
+  color: #38bdf8;
+
+  flex-shrink: 0;
+}
+
+.document-card h3 {
+  margin: 0 0 7px;
+}
+
+.document-card p {
+  margin: 0;
+
+  color: #94a3b8;
+}
+
+/* =========================
+   PROPERTIES
+========================= */
+
+.properties-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 20px;
+}
+
+.property-card {
+  padding: 28px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  transition: 0.3s;
+}
+
+.property-card:hover {
+  transform: translateY(-5px);
+
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+.property-card > span {
+  color: #38bdf8;
+
+  font-weight: 700;
+}
+
+.property-card h3 {
+  margin: 15px 0 10px;
+}
+
+.property-card p {
+  color: #94a3b8;
+
+  line-height: 1.7;
+}
+
+/* =========================
+   EPISODES TABLE
+========================= */
+
+.episodes-table {
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  border-radius: 18px;
+
+  overflow: hidden;
+}
+
+.episodes-header,
+.episode-row {
+  display: grid;
+
+  grid-template-columns:
+    70px
+    1.2fr
+    2fr
+    100px;
+
+  gap: 20px;
+
+  align-items: center;
+
+  padding: 20px 25px;
+}
+
+.episodes-header {
+  background: rgba(56, 189, 248, 0.08);
+
+  color: #38bdf8;
+
+  font-weight: 700;
+}
+
+.episode-row {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.episode-row strong {
+  color: #38bdf8;
+}
+
+.episode-row h3 {
+  margin: 0;
+
+  font-size: 16px;
+}
+
+.episode-row p {
+  margin: 0;
+
+  color: #94a3b8;
+
+  line-height: 1.5;
+}
+
+/* Episode button */
+
+.episode-row button {
+  padding: 10px 15px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #38bdf8;
+
+  color: #08111f;
+
+  font-weight: 700;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.episode-row button:hover {
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 8px 20px rgba(56, 189, 248, 0.25);
+}
+
+/* =========================
+   TOOLS
+========================= */
+
+.tools-grid {
+  display: grid;
+
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 18px;
+}
+
+.tool-card {
+  padding: 20px;
+
+  text-align: center;
+
+  border-radius: 15px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(255, 255, 255, 0.08);
+
+  color: #cbd5e1;
+
+  transition: 0.3s;
+}
+
+.tool-card:hover {
+  transform: translateY(-5px);
+
+  color: #38bdf8;
+
+  border-color: rgba(56, 189, 248, 0.4);
+}
+
+/* =========================
+   BOTTOM
+========================= */
+
+.project-page-bottom {
+  padding: 50px 0 80px;
+
+  display: flex;
+
+  justify-content: center;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+  .project-page-grid {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+  }
+
+  .project-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .objectives-grid,
+  .properties-grid,
+  .documents-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .episodes-header {
+    display: none;
+  }
+
+  .episode-row {
+    grid-template-columns: 50px 1fr;
+
+    gap: 12px;
+  }
+
+  .episode-row p {
+    grid-column: 2;
+  }
+
+  .episode-row .module-button {
+    grid-column: 2;
+
+    width: fit-content;
+  }
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+  .project-page-hero {
+    padding-top: 120px;
+  }
+
+  .project-page-section {
+    padding: 60px 0;
+  }
+
+  .project-page-section h2 {
+    font-size: 32px;
+  }
+
+  .project-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tools-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .project-page-intro h1 {
+    font-size: 40px;
+  }
+
+  .project-page-image {
+    border-radius: 18px;
+  }
+
+  .back-projects {
+    padding: 9px 14px;
+
+    font-size: 13px;
+
+    margin-bottom: 30px;
+  }
+
+  .module-button {
+    padding: 12px 18px;
+
+    font-size: 14px;
+  }
+}
