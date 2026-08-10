@@ -30,7 +30,13 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter basename="/ILYASS-TARGHOUNT">
+    <BrowserRouter
+  basename={
+    import.meta.env.MODE === "github"
+      ? "/ILYASS-TARGHOUNT"
+      : "/"
+  }
+>
       {/* Retour en haut à chaque changement de page */}
       <ScrollToTop />
 
