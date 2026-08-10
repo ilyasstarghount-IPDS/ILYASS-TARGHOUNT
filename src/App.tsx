@@ -10,7 +10,7 @@ import Droites from "./pages/Droites";
    SCROLL TO TOP
 ========================= */
 
-function ScrollToTop() {
+function ScrollToTop(): null {
   const { pathname } = useLocation();
 
   useEffect(() => {
