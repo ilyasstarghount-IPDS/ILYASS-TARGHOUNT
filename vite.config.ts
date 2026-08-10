@@ -3,5 +3,7 @@ import react from '@vitejs/plugin-react'
 
 export default defineConfig({
   plugins: [react()],
-  base: '/ILYASS-TARGHOUNT/',
+  base: process.env.GITHUB_PAGES === 'true'
+    ? '/ILYASS-TARGHOUNT/'
+    : '/',
 })
