@@ -1,4 +1,9 @@
-import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import {
+  Routes,
+  Route,
+  useLocation,
+} from "react-router-dom";
+
 import { useEffect } from "react";
 
 import Home from "./pages/Home";
@@ -6,11 +11,11 @@ import CyberSecurity from "./pages/CyberSecurity";
 import Theoreme from "./pages/Theoreme";
 import Droites from "./pages/Droites";
 
-/* =========================
-   SCROLL TO TOP
-========================= */
+// =========================
+// SCROLL TO TOP
+// =========================
 
-function ScrollToTop(): null {
+function ScrollToTop() {
   const { pathname } = useLocation();
 
   useEffect(() => {
@@ -24,42 +29,44 @@ function ScrollToTop(): null {
   return null;
 }
 
-/* =========================
-   APP
-========================= */
+// =========================
+// APP
+// =========================
 
 function App() {
   return (
-    <Router>
-      {/* Retour en haut à chaque changement de page */}
+    <>
       <ScrollToTop />
 
       <Routes>
-        {/* PAGE D'ACCUEIL */}
+
         <Route
           path="/"
           element={<Home />}
         />
 
-        {/* PROJET CYBERSÉCURITÉ */}
         <Route
           path="/projects/cybersecurity"
           element={<CyberSecurity />}
         />
 
-        {/* PROJET THÉORÈME DES MILIEUX */}
         <Route
           path="/projects/theoreme"
           element={<Theoreme />}
         />
 
-        {/* PROJET DROITES REMARQUABLES */}
         <Route
           path="/projects/droites"
           element={<Droites />}
         />
+
+        <Route
+          path="*"
+          element={<Home />}
+        />
+
       </Routes>
-    </Router>
+    </>
   );
 }
 
