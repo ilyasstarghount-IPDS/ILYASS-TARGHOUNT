@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route, useLocation } from "react-router-dom";
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import { useEffect } from "react";
 
 import Home from "./pages/Home";
@@ -30,13 +30,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter
-  basename={
-    import.meta.env.MODE === "github"
-      ? "/ILYASS-TARGHOUNT"
-      : "/"
-  }
->
+    <Router>
       {/* Retour en haut à chaque changement de page */}
       <ScrollToTop />
 
@@ -65,7 +59,7 @@ function App() {
           element={<Droites />}
         />
       </Routes>
-    </BrowserRouter>
+    </Router>
   );
 }
 
