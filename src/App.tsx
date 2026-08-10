@@ -30,7 +30,7 @@ function ScrollToTop() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/ILYASS-TARGHOUNT">
       {/* Retour en haut à chaque changement de page */}
       <ScrollToTop />
 
